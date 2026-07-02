@@ -19,7 +19,7 @@ A lightweight local speech loopback prototype that listens to your microphone, t
 
 1. Clone the repository
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/tomcoder-777/VoiceLoopback
    cd VoiceLoopback
    ```
 
