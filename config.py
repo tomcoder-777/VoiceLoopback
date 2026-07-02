@@ -1,0 +1,15 @@
+SAMPLE_RATE = 16000
+
+CHANNELS = 1
+
+BLOCK_SIZE = 512 
+
+# BLOCK_SIZE = 1600
+
+MODEL_NAME = "tiny.en"
+
+DEVICE = "cpu"
+
+COMPUTE_TYPE = "int8"
+
+BEAM_SIZE = 1
