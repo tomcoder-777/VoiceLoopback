@@ -1,14 +1,8 @@
 from faster_whisper import WhisperModel
-
+print("Loading local Whisper model...")
 model = WhisperModel(
-    "small",
+    "models/whisper",
     device="cpu",
     compute_type="int8"
 )
-
-segments, info = model.transcribe(
-    "recording.wav"
-)
-
-for segment in segments:
-    print(segment.text)
+print("Success!")

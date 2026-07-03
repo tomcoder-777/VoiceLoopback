@@ -1,17 +1,12 @@
-# Virtual environment
-venv/
-
-# Python cache
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
 
-# Model cache
-models/
-.cache/
-
-# Audio output
-output.wav
+# Virtual environments
+venv/
+.venv/
+env/
 
 # IDE
 .vscode/
@@ -20,3 +15,27 @@ output.wav
 # OS
 .DS_Store
 Thumbs.db
+
+# Audio output
+*.wav
+*.mp3
+
+# Logs
+*.log
+
+# Python cache
+.pytest_cache/
+
+# Pip cache
+pip-wheel-metadata/
+
+# HuggingFace cache
+.cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Git
+.gitmodules
