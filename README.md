@@ -9,36 +9,36 @@ python -m venv venv
 ### 3. Activate it
 
 #### Windows
-'''bash
+```bash
 venv\Scripts\activate
-'''
+```
 
 #### Linux/Mac
-'''bash
+```bash
 source venv/bin/activate
-'''
+```
 
 ### 4. Install dependencies
-'''bash
+```bash
 pip install -r requirements.txt
-'''
+```
 
 ### 5. Download AI models
-'''bash
+```bash
 python scripts/download_models.py
-'''
+```
 
 ### 6. Verify installation
-'''bash
+```bash
 python scripts/verify_setup.py
-'''
+```
 
 ### 7. Run the application
-'''bash
+```bash
 python app.py
-'''
+```
 
-'''
+```
 VoiceLoopback/
 │
 ├── audio/
@@ -56,4 +56,4 @@ VoiceLoopback/
 ├── config.py
 ├── requirements.txt
 └── README.md
-'''
+```
