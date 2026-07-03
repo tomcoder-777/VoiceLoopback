@@ -1,56 +1,45 @@
-# VoiceLoopback
+# 1. Clone the repository
+git clone https://github.com/tomcoder-777/VoiceLoopback.git
 
-A lightweight local speech loopback prototype that listens to your microphone, transcribes speech with Whisper, and speaks the recognized text back using Supertonic.
+cd VoiceLoopback
 
-## What it does
+# 2. Create virtual environment
+python -m venv venv
 
-- Captures microphone audio
-- Uses VAD to detect speech regions
-- Transcribes speech with faster-whisper
-- Sends recognized text to a TTS worker for playback
+# 3. Activate it
 
-## Requirements
+# Windows
+venv\Scripts\activate
 
-- Python 3.10+
-- A working microphone
-- Speakers or headphones
+# Linux/Mac
+source venv/bin/activate
 
-## Local setup
+# 4. Install dependencies
+pip install -r requirements.txt
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/tomcoder-777/VoiceLoopback
-   cd VoiceLoopback
-   ```
+# 5. Download AI models
+python scripts/download_models.py
 
-2. Create and activate a virtual environment
-   ```bash
-   python -m venv .venv
-   .venv\Scripts\activate
-   ```
+# 6. Verify installation
+python scripts/verify_setup.py
 
-3. Install dependencies
-   ```bash
-   pip install -r requirements.txt
-   ```
+# 7. Run the application
+python app.py
 
-4. Run the app
-   ```bash
-   python app.py
-   ```
-
-5. Speak into the microphone and listen for the synthesized reply.
-
-> Use headphones to avoid microphone feedback while testing.
-
-## Notes
-
-- The current configuration uses Whisper tiny on CPU for a lighter local experience.
-- The first run may download model weights and take a little longer.
-- On some systems, audio backend setup may require additional OS-level audio drivers.
-
-## Troubleshooting
-
-- If audio playback fails, verify your speakers/headphones are connected.
-- If microphone input is silent, check your default input device in your OS settings.
-- If the app cannot import dependencies, make sure the virtual environment is active.
+VoiceLoopback/
+│
+├── audio/
+├── stt/
+├── tts/
+├── scripts/
+│   ├── download_models.py
+│   └── verify_setup.py
+│
+├── models/
+│   ├── whisper/
+│   └── supertonic3/
+│
+├── app.py
+├── config.py
+├── requirements.txt
+└── README.md
