@@ -1,11 +1,12 @@
 ### 1. Clone the repository
-```bashgit clone https://github.com/tomcoder-777/VoiceLoopback.git
-
+```bash
+git clone https://github.com/tomcoder-777/VoiceLoopback.git
 cd VoiceLoopback
 ```
 ### 2. Create virtual environment
+```bash
 python -m venv venv
-
+```
 ### 3. Activate it
 
 #### Windows
