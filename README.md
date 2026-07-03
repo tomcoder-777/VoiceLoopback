@@ -1,31 +1,44 @@
-# 1. Clone the repository
+### 1. Clone the repository
 git clone https://github.com/tomcoder-777/VoiceLoopback.git
 
 cd VoiceLoopback
 
-# 2. Create virtual environment
+### 2. Create virtual environment
 python -m venv venv
 
-# 3. Activate it
+### 3. Activate it
 
-# Windows
+#### Windows
+'''bash
 venv\Scripts\activate
+'''
 
-# Linux/Mac
+#### Linux/Mac
+'''bash
 source venv/bin/activate
+'''
 
-# 4. Install dependencies
+### 4. Install dependencies
+'''bash
 pip install -r requirements.txt
+'''
 
-# 5. Download AI models
+### 5. Download AI models
+'''bash
 python scripts/download_models.py
+'''
 
-# 6. Verify installation
+### 6. Verify installation
+'''bash
 python scripts/verify_setup.py
+'''
 
-# 7. Run the application
+### 7. Run the application
+'''bash
 python app.py
+'''
 
+'''
 VoiceLoopback/
 │
 ├── audio/
@@ -43,3 +56,4 @@ VoiceLoopback/
 ├── config.py
 ├── requirements.txt
 └── README.md
+'''
